@@ -1,0 +1,391 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --rojo-principal: #FF4757;
+    --azul-principal: #1F8FFF;
+    --verde-principal: #2ED674;
+    --amarillo-principal: #FFA600;
+}
+
+
+@font-face 
+{
+    font-family: 'jersey10';
+    src: url(./assets/font/Jersey10-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'jersey25';
+    src: url(./assets/font/Jersey25-Regular.ttf);
+    font-weight: normal;
+}
+
+.font-grande {
+    font-family: jersey10, sans-serif;
+}
+
+.font-normal {
+    font-family: jersey25, sans-serif;
+}
+
+.font-busqueda {
+    font-size: x-large;
+}
+
+.font-menu {
+    font-size: large;
+}
+
+.form {
+    width: 60%;
+}
+
+.boton-busqueda {
+    background-color: var(--azul-principal);
+}
+
+.header {
+    background: linear-gradient(to left, var(--rojo-principal), #FF8F99);
+}
+
+.font-header {
+    font-size: 300%;
+    color: white;
+}
+
+.font-vendidos {
+    font-size: 250%;
+    color: var(--verde-principal);
+}
+
+.bg-rojo {
+    background: var(--rojo-principal);
+}
+
+.bg-azul {
+    background: var(--azul-principal);
+}
+
+.bg-verde {
+    background: var(--verde-principal);
+}
+
+.bg-amarillo {
+    background: var(--amarillo-principal);
+}
+
+.tituloform
+{
+    margin-top: 1%;
+    text-align: center;
+    font-weight: 500;
+    font-size: xxx-large;
+    font-family: jersey10, sans-serif;
+    color: var(--azul-principal);
+}
+
+.subtitulo
+{
+    margin-top: 0%;
+    text-align: center;
+    font-weight: 500;
+    font-size: xx-large;
+    font-family: jersey25, sans-serif;
+    color: black;
+}
+
+.formhoja
+{
+    margin-left: 30%;
+    font-family: jersey25, sans-serif;
+    font-size: xx-large;
+    border: 1px solid black;
+    color: black;
+    display: inline-block;
+    width: 40%;
+}
+
+.campostexto 
+{
+    margin-top: 0%;
+    font-size: x-large;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.botonsuscribir 
+{
+    margin-top: 2%;
+    width: 100%;
+    font-family: jersey25, sans-serif;
+    font-size: xxx-large;
+    background-color: #FFA600;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card-container
+{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-principal
+{
+    width: 15%;
+    height: 250px;
+    border-radius: 5%;
+    font-family: jersey25, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 250%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-img-videojuegos
+{
+    margin-top: 20px;
+    width: 40%;
+}
+
+.card-img-accesorios
+{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.card-img-consolas
+{
+    margin-top: 40px;
+    width: 70%;
+}
+
+.card-img-regalo
+{
+    margin-top: 30px;
+    width: 40%;
+}
+
+.card-text-videojuegos
+{
+    margin-top: 20px;
+}
+
+.card-text-accesorios
+{
+    margin-top: 34px;
+}
+
+.card-text-consolas
+{
+    margin-top: 45px;
+}
+
+.card-text-regalo
+{
+    margin-top: 30px;
+    font-size: 90%;
+}
+
+.card-videojuegos
+{
+    background: linear-gradient(to left, var(--rojo-principal), #FF8F99);
+    width: 90%;
+    margin-left: 30%;
+}
+
+.card-accesorios
+{
+    background: linear-gradient(to left, var(--azul-principal), #87C3FF);
+    width: 90%;
+    margin-left: 30%;
+}
+
+.card-consolas
+{
+    background: linear-gradient(to left, var(--verde-principal), #A3DEBC);
+    width: 75%;
+    margin-left: 30%;
+}
+
+.card-regalo
+{
+    margin-left: 10%;
+    background: linear-gradient(to left, var(--amarillo-principal), #FED383);
+    width: 70%;
+}
+
+.titulo-tendencias
+{
+    font-family: jersey10, sans-serif;
+    text-align: center;
+    font-size: xxx-large;
+    color: var(--rojo-principal);
+    font-weight: 500;
+}
+
+.tendencias-container
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background: linear-gradient(to right, var(--rojo-principal), #651A20);
+    grid-template-areas: 
+        "tend1 tend2 tend3 tend4 tend5";
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    font-family: jersey25, sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.tendencia-1
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tend1;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tendencia-1-img
+{
+    width: 25%;
+}
+
+.tendencia-2
+{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tend2;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tendencia-2-img
+{
+    width: 60%;
+}
+
+.tendencia-3
+{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tend3;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tendencia-3-img
+{
+    width: 40%;
+}
+
+.tendencia-4
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tend4;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tendencia-4-img
+{
+    width: 50%;
+}
+
+.tendencia-5
+{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tend5;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tendencia-5-img
+{
+    width: 65%;
+}
+
+@media (max-width: 480px) {
+    .options-container{
+        display: inline-block;
+    }
+
+    .logo-container{
+        width: 40%;
+        padding-left: 4%;
+        padding-right: 30%;
+    }
+    
+    .form{
+        display: none;
+    }
+
+    .buscar {
+        width: 70%;
+    }
+
+    .cuentafont{
+        display: none;
+    }
+
+    .cuentaimg{
+        width: 100%;
+    }
+
+    .cuenta-submenu{
+        width: 30%;
+        font-size: medium;
+        top: 80%;
+        left: 70%;
+    }
+
+    .carritofont{
+        display: none;
+    }
+
+    .carritoimg{
+        width: 80%;
+    }
+
+    .alterBuscar {
+        display: inline-block;
+    }
+
+    .card{
+        width: 45%;
+        height: 200px;
+        font-size: 170%;
+    }
+
+    .tendencias-container{
+        grid-template-areas: 
+        "tend1 tend2"
+        "tend3 tend4"
+        "tend5 tend6";
+        font-size: 120%;
+    }
+
+     .formhoja{
+        font-size: x-large;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
